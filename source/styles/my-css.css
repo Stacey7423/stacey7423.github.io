@@ -1,0 +1,126 @@
+/* в bootstrap5
+используется 12-колоночная сетка
+_grid.scss */
+
+/* для анимации и, видимо, не только
+https://webcode.tools/ 
+генерирует готовый CSS, HTML, etc.*/
+
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(270deg, #000424 0%, #1d2b90 100%);
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(169, 184, 178);
+}
+
+/* дополнительно укажем обращение
+к navbar-nav, т.к. без него выше вес у
+файла css от bootstrap5 */
+
+/* классы с точкой через пробел, если 
+в имени класса class word, то
+при обращении пишем class.word */
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: rgb(169, 184, 178);
+}
+
+/* разбивка контейнеров по сетке
+в bootstrap идёт по строкам,
+затем по столбцам
+(строка, в ней кол-во столбцов,
+след строка-контейнер, в ней
+столбцы-контейнеры, и т.д. */
+
+.side-bar {
+    color: aquamarine;
+    background: linear-gradient(90deg, #000424 0%, #1d2b90 100%);
+}
+
+/* получение доступа к файлам/шрифтам
+н/р, от google-fonts, 
+используем API */
+
+.card {
+    background: linear-gradient(90deg, #000424 0%, #1d2b90 100%);
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin:auto auto;
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(90deg, #000424 0%, #1d2b90 100%);
+    
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2.5s ease 0s infinite normal forwards;
+
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators{
+        display: none;
+    }
+}
+
