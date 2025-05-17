@@ -1,0 +1,280 @@
+.arrangement-form {
+    margin: 1.5% 2%;
+}
+
+.form-container {
+    background-color: #fcfbfb;
+    padding: 0 40px 0 40px;
+}
+
+.form-container>form>.row {
+    margin-top: 1.5em;
+}
+
+h1,
+h2 {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 30px;
+    margin: 40px 0 40px 0;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.bolder {
+    font-weight: 550;
+}
+
+.form-container a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.form-container a:hover {
+    color: #865164;
+    text-decoration: underline;
+}
+
+.form-container>form>p {
+    padding-top: 1rem;
+}
+
+.personal-info>fieldset {
+    margin: 0 0 10px 0;
+}
+
+legend {
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.color-box {
+    display: inline-block;
+    text-align: center;
+    place-content: center;
+    border: 1px solid #ccc;
+    min-width: 7em;
+    height: 3.5em;
+    /* padding: 0.75em 5px; */
+    vertical-align: middle;
+}
+
+.color-div input[type="checkbox"],
+.flower-div input[type="checkbox"] {
+    display: none;
+}
+
+.color-div label:hover,
+.flower-div label:hover {
+    cursor: pointer;
+}
+
+.color-div input[type="checkbox"]:checked+label .color-box {
+    border: solid;
+    border-color: #865164;
+    font-weight: bolder;
+}
+
+.flower-div input[type="checkbox"]:not(:checked)+label input {
+    display: none;
+}
+
+.flower-div input[type="checkbox"]:checked+label>img {
+    border: solid;
+    border-color: #865164;
+}
+
+.light-coral {
+    background-color: lightcoral;
+    /* Или используйте переменную CSS, если возможно */
+}
+
+.red {
+    background-color: rgb(230, 28, 28);
+}
+
+.dark-red {
+    background-color: darkred;
+}
+
+.light-orange {
+    background-color: #ffc574;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.dark-orange {
+    background-color: darkorange;
+}
+
+.light-yellow {
+    background-color: lightyellow;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.dark-yellow {
+    background-color: darkgoldenrod;
+}
+
+.light-green {
+    background-color: lightgreen;
+}
+
+.green {
+    background-color: green;
+}
+
+.dark-green {
+    background-color: darkgreen;
+}
+
+.light-blue {
+    background-color: lightblue;
+}
+
+.blue {
+    background-color: rgb(57, 57, 170);
+}
+
+.dark-blue {
+    background-color: darkblue;
+}
+
+.light-purple {
+    background-color: thistle;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.dark-purple {
+    background-color: indigo;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+.multiple-choice-group {
+    margin: 10px 0;
+}
+
+.multiple-choice-group .color-box {
+    border-radius: 1.5em;
+}
+
+.flower-div img {
+    height: 85%;
+    width: 85%;
+}
+
+.flower-quantity {
+    height: 1.75em;
+}
+
+.other-div {
+    margin: 1em 0;
+}
+
+.skip-btn a {
+    width: 25%;
+}
+
+.skip-btn a:hover {
+    text-decoration: none;
+    color: #fcfbfb;
+}
+
+.arrangement-image img {
+    width: 100%;
+}
+
+.arrangement-item label>a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.submit-order {
+    text-align: center;
+}
+
+.arrangement-choice-group {
+    margin-left: 0.5em;
+}
+
+.arrangement-item>input {
+    width: 70%;
+}
+
+.submit-order button {
+    min-width: 25%;
+}
+
+/* a {
+    text-decoration: none;
+    color: #000000;
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: #865164;
+}
+
+fieldset .quantity,
+.form-container p {
+    margin: 20px 30px;
+}
+
+.arrangement-item label {
+    margin: 0 30px;
+}
+
+.personal-info p,
+.personal-info label,
+.personal-info h1 {
+    text-align: center;
+}
+
+.personal-info fieldset {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+
+.multiple-choice-group label,
+.multiple-choice-group legend,
+.single-choice-group label,
+.arrangement-choice-group legend,
+.arrangement-choice-group img,
+.bouquet-choice-group input {
+    margin: 10px 30px;
+}
+
+legend {
+    font-size: 20px;
+} */

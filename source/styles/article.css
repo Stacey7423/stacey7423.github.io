@@ -1,0 +1,108 @@
+.article-card {
+    box-sizing: border-box;
+    border: 1px solid #865164;
+    position: relative;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transform: translateY(-5px);
+}
+
+.article-body {
+    background: linear-gradient(180deg, #f8f8f8 15%, #c7a7b3 75%);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.article-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 0;
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 0.3s ease;
+}
+
+.article-card a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.article-card a:hover {
+    transform: scale(1.05);
+}
+
+.article-card:hover .article-read-more {
+    color: #eedbe2;
+}
+
+.article-card img {
+    width: 100%;
+    max-height: 385px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.article-title {
+    margin: 0;
+    min-height: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 0;
+}
+
+.article-title:hover {
+    overflow: visible;
+    text-overflow: clip;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    display: block;
+    -webkit-box-orient: initial;
+}
+
+.article-container {
+    background-color: #fcfbfb;
+}
+
+.article-container img {
+    width: 100%;
+    height: auto;
+}
+
+.article-container h1 {
+    font-size: 30px;
+    padding: 30px 50px;
+}
+
+.article-body,
+.article-main p {
+    padding: 10px 50px;
+}
+
+.article-end {
+    padding: 10px 50px
+}
+
+.article-end a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-end a:hover {
+    text-decoration: underline;
+}

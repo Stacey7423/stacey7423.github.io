@@ -1,0 +1,284 @@
+/* в bootstrap5
+используется 12-колоночная сетка
+_grid.scss */
+
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+html {
+    box-sizing: border-box;
+}
+
+.navbar-brand#bb-name img {
+    width: 50px;
+}
+
+.navbar-brand#bb-name {
+    font-weight: bolder;
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+
+    background: linear-gradient(270deg, #f8f8f8 0%, #c7a7b3 100%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-anim {
+    animation: call-anim 2s ease 1s infinite normal forwards;
+}
+
+p {
+    color: rgb(33, 13, 21);
+    font-size: 20px;
+}
+
+nav {
+    background: linear-gradient(90deg, #f8f8f8 20%, #c7a7b3 90%);
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.navbar-nav.pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.pages>li {
+    margin-inline: 0.75em;
+}
+
+/* 
+это для расположения ссылок на страницы слева и кнопок справа, div-обертки убрала
+#navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbarNav .navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+#navbarNav .navbar-right {
+    display: flex;
+    align-items: center;
+} */
+
+.navbar-nav.social-media-links,
+.call-link,
+.navbar-nav.language {
+    margin-left: 2em;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-inline: 0.15em;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #865164;
+}
+
+.social-media-links img {
+    max-height: 35px;
+    max-width: 40px;
+    margin-inline: 0.45em;
+}
+
+.call-link img {
+    max-height: 45px;
+}
+
+.navbar-brand img {
+    width: 175px;
+}
+
+.navbar-toggler {
+    background-color: #c7a7b3;
+    border: 2px solid;
+    border-color: #865164;
+}
+
+.navbar-toggler:hover {
+    border: 3px solid;
+    border-color: #865164;
+}
+
+.navbar-toggler:active {
+    border: 3px solid;
+    border-color: #865164;
+}
+
+/* разбивка контейнеров по сетке
+в bootstrap идёт по строкам,
+затем по столбцам
+(строка, в ней кол-во столбцов,
+след строка-контейнер, в ней
+столбцы-контейнеры, и т.д. */
+
+.side-bar {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #c7a7b3 0%, #f8f8f8 100%);
+}
+
+.side-bar p {
+    margin: 0.5em;
+}
+
+.side-bar a,
+address a,
+.card a,
+footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.side-bar a:hover,
+address a:hover,
+footer a:hover {
+    color: #865164;
+    text-decoration: underline;
+}
+
+/* получение доступа к файлам/шрифтам
+н/р, от google-fonts, 
+используем API */
+
+.card {
+    background: linear-gradient(90deg, #f8f8f8 0%, #c7a7b3 100%);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin: auto auto;
+}
+
+footer,
+.btn-outline-primary,
+.btn-primary {
+    background: linear-gradient(90deg, #f8f8f8 5%, #c7a7b3 70%);
+    padding-top: 10px;
+
+}
+
+.btn-outline-primary,
+.btn-primary {
+    color: #865164;
+    border-color: #865164;
+}
+
+.btn-outline-primary:hover,
+.btn-primary:hover {
+    color: #fff;
+    border-color: #ffffff;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-links img {
+    width: 35px;
+    height: auto;
+    margin: auto auto;
+}
+
+fieldset img {
+    width: 200px;
+    height: auto;
+    margin: 0.5% 0.5%;
+}
+
+@keyframes call-anim {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+    }
+
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(4deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(2deg);
+    }
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    nav {
+        background: linear-gradient(90deg, #f8f8f8 25%, #c7a7b3 80%);
+    }
+
+}
+
+@media (max-width: 680px) {
+    nav {
+        background: linear-gradient(90deg, #f8f8f8 35%, #c7a7b3 70%);
+    }
+
+}
+
+@media (max-width: 550px) {
+    nav {
+        background: linear-gradient(90deg, #f8f8f8 35%, #c7a7b3 75%);
+    }
+
+}
