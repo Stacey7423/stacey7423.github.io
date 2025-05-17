@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/main-style.css">
+    <link rel="stylesheet" href="source/styles/bouquet-form.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/BB_favicon_io/BB-apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/BB_favicon_io/BB-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/BB_favicon_io/BB-16x16.png">
+    <!-- <link rel="manifest" href="source/files/BB_favicon_io/site.webmanifest"> -->
+    <title>Blooming Bouquet - Order bouquet form</title>
+</head>
+
+<body>
+    <header> <!--Шапка сайта -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="bb-name" href="/"><img src="source/files/BB-1-logo.png"
+                        alt="..."><br>Blooming Bouquet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav pages">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="order-bouquet-form.html">Order form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blooming-bouquet-blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav social-media-links">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" rel="noopener noreferrer"
+                                href="https://www.youtube.com/">
+                                <img src="source/files/yt.png" alt="youtube-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" rel="noopener noreferrer"
+                                href="https://t.me/bloomingbouquetflowers">
+                                <img src="source/files/tg.png" alt="telegram-icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav call-link">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+75555555555">
+                                <img class="call-anim" src="source/files/phone-1.png" alt="call-icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav language">
+                        <li><button type="button" class="btn btn-outline-primary btn-lg my-4">ENG</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section> <!--Секция сайта -->
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-lg-1 col-md-0 col-mt-0"> <!-- для пустой колонки сбоку -->
+                </div>
+
+                <div class="col-lg-10  col- form-container">
+                    <form action="" method="post">
+                        <h1>Bouquet order</h1>
+                        <a href="order-arrangement-form.html">Click here <span class="bolder">to order
+                                arrangement(s)</span></a>
+                        <p>Please, fulfill the form to make an order or choose available bouquets. If you wish to make
+                            an order by phone, contact us: <a href="tel:+75555555555">+75555555555</a>
+                        </p>
+                        <fieldset class="personal-info">
+                            <legend>Personal information</legend>
+                            <fieldset>
+                                <label for="full-name">Name (required):</label>
+                                <input type="text" id="full-name" name="name" placeholder="Ex. John Doe" required
+                                    size="20">
+                            </fieldset>
+                            <fieldset>
+                                <label for="phone-number">Phone-number (required):</label>
+                                <input type="tel" id="phone-number" name="phone-number" placeholder="+75555555555"
+                                    value="" required size="20">
+                            </fieldset>
+                            <fieldset>
+                                <label for="email">Email address (optional):</label>
+                                <input placeholder="example@email.com" required id="email" type="email" name="email"
+                                    required size="20" />
+                            </fieldset>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6  left-side">
+
+                                <h2>Customize your bouquet</h2>
+
+                                <fieldset class="quantity">
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" required id="quantity" name="quantity" min="0" max="9999"
+                                        value="1" size="5">
+                                </fieldset>
+
+                                <fieldset class="multiple-choice-group">
+                                    <legend>Flower hues/shades:</legend>
+                                    <p>Click on the labels to select (1 to 3 optional).</p>
+                                    <div class="row">
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-coral" name="color" value="light-coral">
+                                            <label for="light-coral">
+                                                <span class="color-box light-coral">Light coral</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="red" name="color" value="red">
+                                            <label for="red">
+                                                <span class="color-box red">Red</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-red" name="color" value="dark-red">
+                                            <label for="dark-red">
+                                                <span class="color-box dark-red">Dark red</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-orange" name="color" value="light-orange">
+                                            <label for="light-orange">
+                                                <span class="color-box light-orange">Light orange</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="orange" name="color" value="orange">
+                                            <label for="orange">
+                                                <span class="color-box orange">Orange</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-orange" name="color" value="dark-orange">
+                                            <label for="dark-orange">
+                                                <span class="color-box dark-orange">Dark orange</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-yellow" name="color" value="light-yellow">
+                                            <label for="light-yellow">
+                                                <span class="color-box light-yellow">Light yellow</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="yellow" name="color" value="yellow">
+                                            <label for="yellow">
+                                                <span class="color-box yellow">Yellow</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-yellow" name="color" value="dark-yellow">
+                                            <label for="dark-yellow">
+                                                <span class="color-box dark-yellow">Dark yellow</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-green" name="color" value="light-green">
+                                            <label for="light-green">
+                                                <span class="color-box light-green">Light green</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="green" name="color" value="green">
+                                            <label for="green">
+                                                <span class="color-box green">Green</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-green" name="color" value="dark-green">
+                                            <label for="dark-green">
+                                                <span class="color-box dark-green">Dark green</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-blue" name="color" value="light-blue">
+                                            <label for="light-blue">
+                                                <span class="color-box light-blue">Light blue</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="blue" name="color" value="blue">
+                                            <label for="blue">
+                                                <span class="color-box blue">Blue</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-blue" name="color" value="dark-blue">
+                                            <label for="dark-blue">
+                                                <span class="color-box dark-blue">Dark blue</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="light-purple" name="color" value="light-purple">
+                                            <label for="light-purple">
+                                                <span class="color-box light-purple">Light purple</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="purple" name="color" value="purple">
+                                            <label for="purple">
+                                                <span class="color-box purple">Purple</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="dark-purple" name="color" value="dark-purple">
+                                            <label for="dark-purple">
+                                                <span class="color-box dark-purple">Dark purple</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="white" name="color" value="white">
+                                            <label for="white">
+                                                <span class="color-box white">White</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="grey" name="color" value="grey">
+                                            <label for="grey">
+                                                <span class="color-box grey">Grey</span>
+                                            </label>
+                                        </div>
+                                        <div class="color-div col-lg-4 col-md-6 col-4 mt-4">
+                                            <input type="checkbox" id="black" name="color" value="black">
+                                            <label for="black">
+                                                <span class="color-box black">Black</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="multiple-choice-group">
+                                    <legend>Flowers:</legend>
+                                    <p>Click on the images to choose (1 to 3 optional).</p>
+                                    <div class="row">
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="rose" name="flowers" value="rose">
+
+                                            <label for="rose">
+                                                <img src="source/images/form-images/rose.png" alt="rose">
+                                                <div>
+                                                    <span id="rose" class="flower-box rose">Rose</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="rose_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="pivoine" name="flowers" value="pivoine">
+
+                                            <label for="pivoine">
+                                                <img src="source/images/form-images/pivoine.png" alt="rose">
+                                                <div>
+                                                    <span id="pivoine" class="flower-box pivoine">Pivoine</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="pivoine_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="orchid" name="flowers" value="orchid">
+
+                                            <label for="orchid">
+                                                <img src="source/images/form-images/orchid.png" alt="orchid">
+                                                <div>
+                                                    <span id="orchid" class="flower-box orchid">Orchid</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="orchid_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="lisianthus" name="flowers" value="lisianthus">
+
+                                            <label for="lisianthus">
+                                                <img src="source/images/form-images/lisianthus.webp" alt="lisianthus">
+                                                <div>
+                                                    <span id="lisianthus"
+                                                        class="flower-box lisianthus">Lisianthus</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="lisianthus_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="tulip" name="flowers" value="tulip">
+
+                                            <label for="tulip">
+                                                <img src="source/images/form-images/tulip.png" alt="tulip">
+                                                <div>
+                                                    <span id="tulip" class="flower-box tulip">Tulip</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="tulip_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="lily" name="flowers" value="lily">
+
+                                            <label for="lily">
+                                                <img src="source/images/form-images/lily.png" alt="lily">
+                                                <div>
+                                                    <span id="lily" class="flower-box lily">Lily</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="lily_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="hydrangea" name="flowers" value="hydrangea">
+
+                                            <label for="hydrangea">
+                                                <img src="source/images/form-images/hydrangea.png" alt="hydrangea">
+                                                <div>
+                                                    <span id="hydrangea" class="flower-box hydrangea">Hydrangea</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="hydrangea_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="carnation" name="flowers" value="carnation">
+
+                                            <label for="carnation">
+                                                <img src="source/images/form-images/carnation.png" alt="carnation">
+                                                <div>
+                                                    <span id="carnation" class="flower-box carnation">Carnation</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="carnation_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="chrysanthemum" name="flowers"
+                                                value="chrysanthemum">
+
+                                            <label for="chrysanthemum">
+                                                <img src="source/images/form-images/chrysanthemum.png"
+                                                    alt="chrysanthemum">
+                                                <div>
+                                                    <span id="chrysanthemum"
+                                                        class="flower-box chrysanthemum">Chrysanthemum</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="chrysanthemum_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="gerbera" name="flowers" value="gerbera">
+
+                                            <label for="gerbera">
+                                                <img src="source/images/form-images/gerbera.png" alt="gerbera">
+                                                <div>
+                                                    <span id="gerbera" class="flower-box gerbera">Gerbera</span>
+                                                </div>
+                                                <div class="flower-quantity">
+                                                    <input type="number" name="gerbera_specify"
+                                                        placeholder="quantity (optional)">
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="multiple-choice-group">
+                                    <legend>Base Greens/foliage:</legend>
+                                    <p>Click on the image to choose.</p>
+                                    <div class="row">
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="radio" checked id="none" name="flowers" value="none">
+                                            <label for="none">
+                                                <img src="source/images/form-images/none.png" alt="none">
+                                                <div>
+                                                    <span id="none" class="flower-box none">None</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="radio" id="eucalyptus" name="flowers" value="eucalyptus">
+                                            <label for="eucalyptus">
+                                                <img src="source/images/form-images/eucalyptus.png" alt="eucalyptus">
+                                                <div>
+                                                    <span id="eucalyptus"
+                                                        class="flower-box eucalyptus">Eucalyptus</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="radio" id="ruscus" name="flowers" value="ruscus">
+                                            <label for="ruscus">
+                                                <img src="source/images/form-images/ruscus.png" alt="ruscus">
+                                                <div>
+                                                    <span id="ruscus" class="flower-box ruscus">Ruscus</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="radio" id="pittosporum" name="flowers" value="pittosporum">
+                                            <label for="pittosporum">
+                                                <img src="source/images/form-images/pittosporum.png" alt="pittosporum">
+                                                <div>
+                                                    <span id="pittosporum"
+                                                        class="flower-box pittosporum">Pittosporum</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="multiple-choice-group">
+                                    <legend>Flowers:</legend>
+                                    <p>Click on the images to choose (optional).</p>
+                                    <div class="row">
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="wax-flower" name="flowers" value="wax-flower">
+
+                                            <label for="wax-flower">
+                                                <img src="source/images/form-images/wax-flower.png" alt="wax-flower">
+                                                <div>
+                                                    <span id="wax-flower" class="flower-box wax-flower">Wax
+                                                        flower</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="tree-fern" name="flowers" value="tree-fern">
+
+                                            <label for="tree-fern">
+                                                <img src="source/images/form-images/tree-fern.png" alt="tree-fern">
+                                                <div>
+                                                    <span id="tree-fern" class="flower-box tree-fern">Tree fern</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="lavender" name="flowers" value="lavender">
+
+                                            <label for="lavender">
+                                                <img src="source/images/form-images/lavender.png" alt="lavender">
+                                                <div>
+                                                    <span id="lavender" class="flower-box lavender">Lavender</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flower-div col-lg-6 col-md-6 col-6 mt-4">
+                                            <input type="checkbox" id="limonium" name="flowers" value="limonium">
+
+                                            <label for="limonium">
+                                                <img src="source/images/form-images/limonium.png" alt="limonium">
+                                                <div>
+                                                    <span id="limonium" class="flower-box limonium">Limonium</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="single-choice-group">
+                                    <legend>Other features:</legend>
+                                    <div class="row">
+                                        <div class="other-div">
+                                            <label for="wrapping">Wrapping/Packaging:</label>
+                                            <select id="wrapping" name="wrapping">
+                                                <option value="kraft-paper">Kraft paper</option>
+                                                <option value="florist-film">Florist film</option>
+                                                <option value="mesh">Mesh</option>
+                                                <option value="felt">Felt</option>
+                                                <option value="no-wrapping">No wrapping (tied with ribbon)</option>
+                                            </select>
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="size">Bouquet size (approximate):</label>
+                                            <select id="size" name="size">
+                                                <option value="small">Small (up to 15 flowers)</option>
+                                                <option value="medium">Medium (16-30 flowers)</option>
+                                                <option value="large">Large (More than 30 flowers)</option>
+                                                <option value="extra-large">Extra large (Lush)</option>
+                                            </select>
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="style">Bouquet style (Optional):</label>
+                                            <select id="style" name="style">
+                                                <option value="classic">Classic (round, dense)</option>
+                                                <option value="loose">Loose/Disheveled</option>
+                                                <option value="field">Field style</option>
+                                                <option value="mono">Mono-bouquet</option>
+                                            </select>
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="ribbon-color">Ribbon Color:</label>
+                                            <input type="color" id="ribbon-color" name="ribbon-color" value="#f3d7d7">
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="allergies">Allergies:</label>
+                                            <textarea id="allergies" name="allergies" rows="3"
+                                                placeholder="Please indicate any allergies the recipient has. This is very important!"></textarea>
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="requests">Requests/Additional details:</label>
+                                            <textarea id="requests" name="requests" rows="5"
+                                                placeholder="Please specify any additional requests or details you would like us to consider."></textarea>
+                                        </div>
+                                        <div class="other-div ">
+                                            <label for="budget">Budget,rbl (Optional):</label>
+                                            <input type="number" id="budget" name="budget"
+                                                placeholder="Enter your budget">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6  right-side">
+                                <h2>Ready-made bouquets</h2>
+
+                                <div class="skip-btn my-2 text-center">
+                                    <a href="order-bouquet-form.html#submit-btn" class="btn btn-primary">Skip</a>
+                                </div>
+
+                                <fieldset class="quantity">
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" required id="quantity" name="quantity" min="0" max="9999"
+                                        value="0">
+                                </fieldset>
+
+                                <fieldset class="bouquet-choice-group">
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/roses.jpeg"
+                                                    alt="pink-roses-bouquet">
+                                            </div>
+                                            <div><label for="pink-roses-bouquet"><a
+                                                        href="catalog.html#pink-roses-bouquet" target="_blank">Pink
+                                                        roses bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="pink-roses-bouquet"
+                                                name="pink-roses-bouquet" class="bouquet-quantity">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/tulips.jpg"
+                                                    alt="tulips-bouquet">
+                                            </div>
+                                            <div><label for="tulips-bouquet"><a href="catalog.html#tulips-bouquet"
+                                                        target="_blank">Tulips
+                                                        bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="tulips-bouquet"
+                                                name="tulips-bouquet" class="bouquet-quantity">
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/middle_1.jpeg"
+                                                    alt="middle-bouquet">
+                                            </div>
+                                            <div><label for="middle-bouquet"><a href="catalog.html#middle-bouquet"
+                                                        target="_blank">Middle
+                                                        bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="middle-bouquet"
+                                                name="middle-bouquet" class="bouquet-quantity">
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/little_1.jpg"
+                                                    alt="little-bouquet">
+                                            </div>
+                                            <div><label for="little-bouquet"><a href="catalog.html#little-bouquet"
+                                                        target="_blank">Little
+                                                        bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="little-bouquet"
+                                                name="little-bouquet" class="bouquet-quantity">
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/red-roses.jpg"
+                                                    alt="red-roses-bouquet">
+                                            </div>
+                                            <div><label for="red-roses-bouquet"><a href="catalog.html#red-roses-bouquet"
+                                                        target="_blank">Red
+                                                        roses
+                                                        bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="red-roses-bouquet"
+                                                name="red-roses-bouquet" class="bouquet-quantity">
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/big_roses.jpeg"
+                                                    alt="big-roses-bouquet">
+                                            </div>
+                                            <div><label for="big-roses-bouquet"><a href="catalog.html#big-roses-bouquet"
+                                                        target="_blank">Big
+                                                        roses bouquet</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="big-roses-bouquet"
+                                                name="big-roses-bouquet" class="bouquet-quantity">
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 mt-4 bouquet-item">
+                                            <div class="bouquet-image">
+                                                <img src="source/images/bouquets-and-compositions/750x1000-big_bunch.jpeg"
+                                                    alt="big-bunch">
+                                            </div>
+                                            <div><label for="big-bunch"><a href="catalog.html#big-bunch"
+                                                        target="_blank">Big
+                                                        bunch</a></label>
+                                            </div>
+                                            <input type="number" min="0" value="0" id="big-bunch" name="big-bunch"
+                                                class="bouquet-quantity">
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                            <div class="submit-order">
+                                <button type="submit" class="btn btn-outline-primary btn-lg my-4" id="submit-btn">Submit
+                                    Order</button>
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="mt-4"> <!--Подвал сайта -->
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-lg-4  footer-text text-center">
+                    <p>&copy; <span class="copyright-year">2025</span> Blooming Bouquet - all rights reserved</p>
+                    <p>
+                        <a href="privacy-policy.html" target="_blank" title="Our Privacy Policy">
+                            Privacy Policy
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-4  footer-text text-center">
+                    <p><a href="tel:+75555555555" target="_blank" rel="noopener noreferrer" title="Our phone number">+7
+                            (555) 555-5555</a></p>
+                    <p>
+                        <a href="https://yandex.ru/profile/-/CHbWRGnv" target="_blank" rel="noopener noreferrer"
+                            title="Our address on Yandex map">
+                            129090, Russia, Moscow, <!-- <br /> -->
+                            Prospect Mira, 26 building 1
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-4  social-media-links">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                        title="Our Youtube chanel">Youtube<img style="width: 35px; margin-inline: 1em;"
+                            src="source/files/yt.png" alt="youtube-icon"></a>
+                    <a href="https://t.me/bloomingbouquetflowers" target="_blank" rel="noopener noreferrer"
+                        title="Our Telegram chanel">Telegram<img style="width: 35px; margin-inline: 1em;"
+                            src="source/files/tg.png" alt="telegram-icon"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
